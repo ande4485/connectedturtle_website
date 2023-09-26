@@ -1,0 +1,193 @@
+// ==========================================================================
+// Generic
+// ==========================================================================
+
+html {
+   box-sizing: border-box;
+   
+}
+
+body{
+    background-color: $start_color;
+    
+}
+
+.hand_background{
+//background-image: url("/hand.svg");
+//background-repeat: no-repeat;
+//background-position: center;
+//background-color: red;
+height: 100%;
+width:100%;
+z-index: 0;
+text-align: center;
+position: absolute;
+
+}
+
+.hand_background img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+
+.hand_background2{
+   // background-image: url("/hand.svg");
+   // background-repeat: no-repeat;
+   // background-position: center;
+    //background-color: red;
+    height: 100%;
+    width:100%;
+    z-index: 0;
+    text-align: center;
+    position: absolute;
+    
+}
+
+.hand_background2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.above{
+   //position: absolute;
+    //left: 0;
+    //top:0;
+    //top:-500px;
+    z-index: 9;
+}
+
+.background_filled{
+    background-color: $start_color;
+}
+
+.section_element{
+    z-index: 9;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    @media (max-width: $to-large) {
+        padding-bottom: 100px;
+       
+    }
+
+    @media (min-width: $from-large) {
+       
+       padding-bottom: 100px;
+       
+    }
+}
+
+.section_element_content{
+    
+
+    @media (min-width: $from-large) and (max-width: $to-huge) {
+        padding-left: 15%;
+        padding-right: 15%;
+        
+    }
+
+    @media (min-width: $from-huge) and (max-width: $to-gigantic) {
+        padding-left: 15%;
+        padding-right: 15%;
+        
+    }
+
+    @media (min-width: $from-gigantic) and (max-width: $to-colossal) {
+        padding-left: 15%;
+        padding-right: 15%;
+        
+    }
+
+    @media (min-width: $from-colossal) {
+        padding-left: 15%;
+        padding-right: 15%;
+        
+    }
+}
+
+
+
+//
+// Add the correct display in IE 10-.
+// 1. Add the correct display in IE.
+//
+template, /* [1] */
+[hidden] {
+    display: none;
+}
+
+
+:before,
+:after {
+    box-sizing: inherit;
+   
+}
+
+address {
+    font-style: inherit;
+}
+
+dfn,
+cite,
+em,
+i {
+    font-style: italic;
+}
+
+b,
+strong {
+    font-weight: $bold;
+}
+
+a {
+    text-decoration: none;
+
+    svg {
+        pointer-events: none;
+    }
+}
+
+// Resets
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Single taps should be dispatched immediately on clickable elements
+ */
+a, area, button, input, label, select, textarea, [tabindex] {
+    -ms-touch-action: manipulation; /* [1] */
+    touch-action: manipulation;
+}
+
+[hreflang] > abbr[title] {
+   // text-decoration: none;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+hr {
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $black;
+}

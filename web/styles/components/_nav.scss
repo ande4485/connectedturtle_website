@@ -1,0 +1,51 @@
+.nav{
+    overflow: hidden;
+    background: $start_color;
+    padding: 20px;
+    
+    @media (min-width: $from-medium) {
+        padding: 40px;
+    }
+
+    
+   
+    }
+
+
+
+.nav_logo{
+    display:inline-block;
+    height: 50px;
+    width: 200px;
+}
+
+
+
+.nav_button {
+    vertical-align: baseline;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    background: $white;
+    color:$color;
+    text-decoration: none;
+    //font-size: 17px;
+    border-radius: 5px;
+    text-decoration: none;
+     text-align: center;
+    float: right;
+    line-height: 25px;
+    padding: 10px;
+    margin-right: 20px;
+    
+}
+@keyframes move_nav_button {
+  from {background-color: $white;border-radius: 5px;color: $color;}
+  to {background-color: $color;border-radius: 25px;color: $white;}
+}
+
+.nav_button:hover{
+    
+    
+    animation: move_nav_button 2s ;
+}

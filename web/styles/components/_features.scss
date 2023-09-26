@@ -1,0 +1,29 @@
+
+.section_features{
+  padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 20%;
+  position: relative;
+    //background-color: $start_color;
+    //height:70vh;
+    align-items: center;
+    justify-content: center; 
+    @media (orientation: landscape) {
+      padding-bottom: 10%;
+    }
+
+}
+
+.features{
+    font-size: rem(25px);
+    font-weight: $semi-bold;  
+    display: flex;
+  justify-content: center;
+  align-items: center;
+   
+  
+}
+
+
+

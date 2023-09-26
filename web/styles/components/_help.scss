@@ -1,0 +1,59 @@
+
+.section_help{
+position:relative;
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.turtle_img{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
+padding-right: 5%;
+}
+
+.turtle_img img{
+    //width: 100%;
+    //height: 100%;
+    
+   // object-fit: contain;
+    overflow: hidden;
+}
+
+.help_sponsor{
+    margin:20px;
+}
+
+.help {
+    //display: grid;
+    @media (max-width: $to-medium) {
+        margin-top: calc($unit/2);
+    }
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+
+.help_list {
+    //display: grid;
+    @media (max-width: $to-medium) {
+        margin-top: calc($unit/2);
+    }
+    align-items: center;
+    justify-content: center;
+}
+
+.help_list_item {
+    position: relative;
+    
+    
+  
+
+        
+
+
+   
+}

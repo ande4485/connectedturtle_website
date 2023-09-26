@@ -1,0 +1,161 @@
+
+
+
+
+  .slider{
+   
+margin: 0px;
+//max-width: 1512px;
+width: 100%;
+
+
+
+  }
+
+  .slider_wrapper{
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+
+width: 100%;
+
+
+  }
+
+  .slider_card{
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    height: 150px;
+    
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    //opacity:0;
+    
+    
+     border: 2px solid white;
+  
+    border-radius: 5px;
+@media (max-width: $to-small) {
+    
+    //margin-top: 60px;  
+ }
+
+ @media (min-width: $from-small) and (max-width: $to-medium) {
+    width: 300px;
+height: 150px;
+     
+ }
+
+ @media (min-width: $from-medium) {
+    width: 400px;
+    height: 200px;
+}
+  }
+
+   .slider_card_2_links{
+    
+  
+  
+  display: flex;
+  flex-direction: column;
+
+
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    height: 150px;
+    
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    //opacity:0;
+    
+    
+     border: 2px solid white;
+  
+    border-radius: 5px;
+@media (max-width: $to-small) {
+    
+    //margin-top: 60px;  
+ }
+
+ @media (min-width: $from-small) and (max-width: $to-medium) {
+    width: 300px;
+height: 150px;
+     
+ }
+
+ @media (min-width: $from-medium) {
+    width: 400px;
+    height: 200px;
+}
+  }
+
+  .slider_card_link{
+
+    position: absolute;
+     
+    width:100%;
+    bottom: 0px;
+    height:50px;
+    background: $white;
+    color:$color;
+    @media (max-width: $to-medium) {
+      height:20px;
+       
+   }
+  
+   @media (min-width: $from-medium) {
+    height:40px;
+  }
+  }
+
+  .slider_card_link_github{
+  margin-top: auto;
+     
+    width:100%;
+    
+    height:50px;
+    background: $white;
+    color:$color;
+    @media (max-width: $to-medium) {
+      height:20px;
+       
+   }
+  
+   @media (min-width: $from-medium) {
+    height:40px;
+  }
+
+  }
+
+  .slider_card_link_bt{
+    
+   display: inline-block;
+    border: none;
+    outline: 0;
+    //padding: 12px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+   
+  }
+
+  .slider_card_title{
+    font-weight: bold;
+  }
+
+  .slider_card_content{
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .elements_price_conclusion{
+    padding-top: 10px;
+  }
+
+
+  
+
+  
+  

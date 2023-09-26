@@ -1,0 +1,61 @@
+
+.footer {
+   overflow: hidden;
+   
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+   
+  }
+.footer_part{
+    flex: 200px;
+
+
+}
+
+.footer_part span{
+  font-weight: bold;
+}
+
+.footer li{
+    padding: 10px;
+}
+
+@keyframes linkein-hover {
+    from {background-color: $end_color;border-radius: 5px;width:0%;}
+    to {background-color: $linkedin-color;color:white;border-radius: 25px;width:50%;}
+  }
+
+  @keyframes youtube-hover {
+    from {background-color: $end_color;border-radius: 5px;width:0%;}
+    to {background-color: $youtube-color;color:white;border-radius: 25px;width:50%;}
+  }
+
+  @keyframes github-hover {
+    from {background-color: $end_color;border-radius: 5px;width:0%;}
+    to {background-color: $github-color;color:white;border-radius: 25px;width:50%;}
+  }
+
+.footer li:hover{
+
+
+    &.linkedin{
+      animation: linkein-hover 1s;
+      animation-fill-mode: forwards;
+    }
+    &.youtube{
+      animation: youtube-hover 1s;
+      animation-fill-mode: forwards;
+    }
+    &.github{
+      animation:github-hover 1s;
+      animation-fill-mode: forwards;
+    }
+    padding: 10px;
+    
+   
+}
+
+
+  
+  

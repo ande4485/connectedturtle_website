@@ -1,0 +1,55 @@
+:root {
+    --color: #243746;
+    --color-primary: #000000;
+    --color-secondary: #283b27;
+    --bg: #f3f5f4;
+    --bg-secondary: #fff;
+    --border-color: #ddd;
+  }
+  
+  .dark-mode {
+    --color: #ebf4f1;
+    --color-primary: #000000;
+    /**--color-secondary: #fdf9f3;**/
+    --bg: #000000;
+    --bg-secondary: #071521;
+    --border-color: #0d2538;
+  }
+  .sepia-mode {
+    --color: #433422;
+    --color-secondary: #504231;
+    --bg: #f1e7d0;
+    --bg-secondary: #eae0c9;
+    --border-color: #ded0bf;
+  }
+  
+  body {
+    
+    background-color: var(--bg);
+    color: var(--color);
+    transition: background-color 0.3s;
+  }
+  a {
+    color: var(--color-primary);
+  }
+
+  @keyframes example {
+    0%   {transform: perspective(500px) translate3d(10px,0px,0px);}
+   
+    50%  {transform: perspective(500px) translate3d(50px,0px,0px);}
+    
+    100% {transform: perspective(500px) translate3d(100px,0px,0px);}
+   }
+  
+
+   .moved {
+    
+    /**/
+    /* Équivalent à perspective(500px) translateX(10px)*/
+    animation-name: example;
+    animation-duration: 5s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+  }
+
+  
